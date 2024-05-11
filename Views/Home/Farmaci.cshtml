@@ -1,0 +1,113 @@
+@{
+    ViewData["Title"] = "Farmaci";
+}
+
+
+<h1>Elenco dei farmaci</h1>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmaci</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+     .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    .farmaco-container {
+      clear: both;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .farmaco-img {
+      float: left;
+      width: 40%;
+      margin-right: 5%;
+    }
+    .farmaco-descrizione {
+      float: left;
+      width: 45%;
+    }
+    .aggiungi-carrello {
+      float: left;
+      margin-top: 25px;
+    }
+    .farmaco-img img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    .farmaco-descrizione h2 {
+      margin-top: 0;
+    }
+    .farmaco-descrizione p {
+      margin-bottom: 10px;
+    }
+    .aggiungi-carrello button {
+      background-color: #008000;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="farmaco-container">
+    <div class="farmaco-img">
+      <img src="/img/paracetamolo.jpg" alt="Paracetamolo" style="max-width: 250px; max-height: 250px;">
+    </div>
+    <div class="farmaco-descrizione">
+      <h2>Paracetamolo</h2>
+      <p>Comunemente usato come analgesico e antipiretico per ridurre il dolore e la febbre.</p>
+      <div class="aggiungi-carrello">
+        <button>Aggiungi al carrello</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="farmaco-container">
+    <div class="farmaco-img">
+      <img src="/img/ibuprofene.png" alt="Ibuprofene" >
+    </div>
+    <div class="farmaco-descrizione">
+      <h2>Ibuprofene</h2>
+      <p>Un farmaco antinfiammatorio non steroideo (FANS) usato per il sollievo a breve termine dai sintomi del dolore e dell'infiammazione.</p>
+      <div class="aggiungi-carrello">
+        <button>Aggiungi al carrello</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="farmaco-container">
+    <div class="farmaco-img">
+      <img src="/img/amoxicillina.png" alt="Amoxicillina">
+    </div>
+    <div class="farmaco-descrizione">
+      <h2>Amoxicillina</h2>
+      <p>Un antibiotico comunemente usato per trattare una varietà di infezioni batteriche.</p>
+      <div class="aggiungi-carrello">
+        <button>Aggiungi al carrello</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
